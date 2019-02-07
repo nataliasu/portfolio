@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Sarabun');
+
+html,
+body {
+    font-family: 'Sarabun', sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*comment*/
+/*NOTE zrobić dalej*/
+#navbar {
+    position: fixed;
+    top: 0;
+}
+
+#navbar ul {
+    position: fixed;
+    text-align: right;
+    width: 100%;
+    background-color: #abd3d3;
+    top: 0;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar ul li {
+    display: inline-block;
+    margin: 15px 55px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+#navbar a:hover {
+    color: #59afaf;
+}
+
+#welcome-section {
+    padding: 0;
+    margin: 0px;
+    top: 0;
+    height: 100vh;
+    background-color: #abd3d3;
+}
+
+#welcome-section h1 {
+    padding-top: 40vh;
+}
+
+#projects {
+    padding-top: 60px;
+}
+
+.project-tile {
+    text-decoration: none;
+    display: inline-block;
+    color: #448282;
+    overflow: hidden;
+    margin: 40px 60px;
+}
+
+.project-title,
+.show-all {
+    color: #448282;
+    text-decoration: none;
+    border: 1px solid black;
+    width: 350px;
+    margin: 0px auto 20px auto;
+    padding: 10px 0;
+    font-weight: 1000;
+    font-size: 1.2em;
+}
+
+.project-pic {
+    width: 350px;
+    height: 250px;
+    border: 1px solid black;
+    padding-top: 0px;
+}
+
+#projects h2 {
+    margin-top: 50px;
+    color: #448282;
+    font-weight: normal;
+}
+
+.show-all {
+    display: block;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #d7e9e9;
+    margin-bottom: 50px;
+}
+
+.show-all:hover {
+    background-color: #355454;
+    color: #c4d8d8;
+}
+
+#contact {
+    height: 100vh;
+    padding-top: 60px;
+    background-color: #9ab6b6;
+}
+
+.header {
+    padding-top: 30vh;
+}
+
+.header h1 {
+    color: #276161;
+}
+
+.fab,
+.fas {
+    color: black;
+    font-size: 3em;
+    padding: 20px 50px;
+}
+
+.fab:hover,
+.fas:hover {
+    color: #ffffff;
+}
+
+footer {
+    padding: 30px;
+    background-color: #276161;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .fab,
+    .fas {
+        padding: 20px 30px;
+    }
+
+    .project-pic,
+    .project-title,
+    .show-all {
+        height: auto;
+        width: 280px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .fab,
+    .fas {
+        padding: 20px 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    #navbar ul {
+        text-align: center;
+        width: 97vw;
+    }
+
+    #navbar ul li {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+
+    .project-pic,
+    .project-title,
+    .show-all {
+        height: auto;
+        width: 200px;
+    }
+
+    .fab,
+    .fas {
+        font-size: 2em;
+        padding: 20px 15px;
+    }
+
+}
